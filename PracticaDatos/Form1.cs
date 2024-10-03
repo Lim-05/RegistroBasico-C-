@@ -6,8 +6,15 @@ using System.Drawing;
 using System.IO;
 using System.Linq;
 using System.Text;
+<<<<<<< HEAD
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using MySql.Data.MySqlClient;
+=======
+using System.Threading.Tasks;
+using System.Windows.Forms;
+>>>>>>> e74846d0fec4ec84bc6783c2384e20d9c225e7de
 
 namespace PracticaDatos
 {
@@ -16,6 +23,18 @@ namespace PracticaDatos
         public Form1()
         {
             InitializeComponent();
+<<<<<<< HEAD
+
+            //Agregar controladores de eventos TextChanged a los c;
+            tbEdad.TextChanged += validarEdad;
+            tbEstatura.TextChanged += validarEstatura;
+            //tbTelefono.TextChanged += validarTelefono;
+            tbTelefono.Leave += validarTelefono;
+            tbNombre.TextChanged += validarNombre;
+            tbApellidos.TextChanged += validarApellidos;
+
+=======
+>>>>>>> e74846d0fec4ec84bc6783c2384e20d9c225e7de
         }
 
         private void btGuardar_Click(object sender, EventArgs e)
